@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>CRUD de Tarefas</title>
+  </head>
+  <body>
+
+    <div id="tasks-container">
+      <div id="tasks-header">
+        <h2>Salve a sua próxima tarefa:</h2>
+        <form id="add-task-form" action="">
+          <input type="text" id="task-title" placeholder="O que você vai fazer?">
+          <button id="add-btn" type="submit">
+            <i class="icon fa-solid fa-plus"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="tasks-list-container">
+        <h2>Estas são suas tarefas:</h2>
+        <ul id="task-list">
+            <li class="task-box template hide">
+              <span class="task-title">Title</span>
+              <i class="icon done-btn fa-solid fa-check"></i>
+              <i class="icon remove-btn fa-solid fa-xmark"></i>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ab30c524c7.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

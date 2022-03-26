@@ -1,0 +1,308 @@
+**** O que é JavaScript ****
+- Uma linguagem de programação de alto nível;
+    É chamado assim por ter uma sintaxe mais parecida com a forma como os idiomas são estruturados;
+- Auxilia na criação de páginas, junto de HTML (estrutura) e CSS (estilo);
+- Possui tipagem dinâmica fraca;
+    Não é necessário definir o tipo da variável
+- É considerada multiparadigma (OO, imperativo, funcional)
+
+**** Para que serve o JS ****
+- Manipulação de elementos e estilos na página (DOM);
+- Criar eventos em uma página;
+- Pode ser utilizado no back-end (Node.js)
+
+**** Primeiro Programa ****
+- O código em JavaScript precisa ser inserido no HTML;
+- Então será executado ao carregar a página;
+
+**** Inserção de JavaScript ****
+- Há três formas de inserir JS em uma página;
+- head: linkando um arquivo de script;
+- body: escrevendo código entre a tags script;
+- body: linkando um arquivo de script externo;
+
+**** Sobre a linguagem ****
+- O código é executado de cima para baixo;
+- A linguagem é case sensitive
+- Tipagem fraca;
+- O ponto e vírgula a cada instrução é opcional (recomendado colocar);
+- Há comentários para uma linha e múltiplas linhas;
+
+**** Variáveis ****
+- As variáveis armazenam valores;
+- Estes valores podem ser utilizados posteriormente;
+- No JavaScript é possível criar variáveis de 3 formas;
+- Podemos mudar o tio da variável livremente (tipagem fraca);
+
+**** Tipos de dados ****
+- No JS, temos diversos tipos de dados, os mais comuns e utilizados são:
+- Number, String, Boolean, null e undefined, Object;
+- Podemos verificar o tipo do dado com o operador typeof
+
+    * NUMBER
+    - O Number é o tipo de dado para números;
+    - Possui três valores simbólicos: +Infinity, -Infinity e NaN;
+    - Não existe um tipo definido para inteiros, todo número é um Number;
+
+    * STRING 
+    - String é o tipo de dado para textos;
+    - As strings podem ser escritas com aspas simples e duplas;
+    - Um número entre aspas pode ser considerado uma string;
+    - É possível concatenar strings com o +;
+    - document.write('') escreve algo no documento
+
+    * BOOLEAN
+    - Representa um valor verdadeiro ou falso;
+    - Comparações resultam em booleans;
+    - Podemos atribuir um ture ou false para uma variável;
+
+    * NULL && UNDEFINED 
+    - undefined e null também são considerados tipos de dados;
+    - O null é um ipo de dado que representa um valor;
+    - O undefined é um tipo de dado para uma variável com valor não atribuído;
+
+        * HOISTING
+        - o hoisting tem a finalidade de identificar as declarações de
+        variáveis e funções, não inicializá-las. 
+        Ele coloca a declaração das variáveis e funções no topo do código
+        
+        Exemplo: console.log(_a); // undefined
+                 var _a = 1;
+
+        Neste caso, teremos a variável _a como undefined, pois o
+        hoisting identificou ela, mas não a inicializou.
+        Isso por que futuramente ela terá valor atribuído no código
+    
+    * OBJECT
+    - Funcionam como um array associativo de outras linguagens;
+    - Podemos criar propriedades como chave e valor;
+    - A ideia é guardar um conjunto de valores, iguais ou distintos, para utilizar posteriormente;
+    - As propriedades podem ser acessadas por meio da seguinte sintaxe: nomeObj.propriedade;
+    - Para criar uma nova propriedade, basta utilizar a sintaxe anterior: nomeObj.novaPropriedade = valor;
+
+    * ARRAY
+    - Os arrays são considerados objetos em JavaScript, porém, servem como listas;
+    - Podemos ter itens de qualquer tipo de dado também;
+    - Porém, não por chave e valor, e sim por índice;    
+
+**** Operadores Condicionais ****
+- São instruções que podemdeterminar o fluxo de uma aplicação;
+- Amplamente utilizados, deixa os softwares dinâmicos;
+- Exemplos são: if, else if, else;
+
+**** Comparação de Tipo e Valor ****
+- Os operadores === e !=== comparam o valor e tipo de dado
+
+**** Funções ****
+- Funções são blocos de códigos reutilizáveis;
+- Ou seha, evitamos a repetição da lógica de um programa em diversas partes do código;
+- A função precisa ser invocada para ser executada;
+
+**** DOM ****
+- O Modelo de Objeto de Documento  (DOM) é uma interface de programação para documentos HTML, XML e SVG . Ele fornece uma representação estruturada do documento como uma árvore. O DOM define métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do documento. O DOM fornece uma representação do documento como um grupo estruturado de nós e objetos, possuindo várias propriedades e métodos. Os nós também podem ter manipuladores de eventos que lhe são inerentes, e uma vez que um evento é acionado, os manipuladores de eventos são executados. Essencialmente, ele conecta páginas web a scripts ou linguagens de programação;
+- Embora o DOM seja frequentemente acessado usando JavaScript, não é uma parte da linguagem JavaScript. Ele também pode ser acessado por outras linguagens;
+
+**** Escopo ****
+- No JS, podemos ter vários escopos;
+- O global, que é iniciado em toda a aplicação;
+- E os locais, que podem existir em várias instruções como as funções
+
+**** Let e Const + escopo ****
+- Utilizando let e const, podemos criar escopo até em instruções como if;
+- Deixando o código mais confiável;
+- Separando cada bloco em um escopo;
+
+**** Métodos Numéricos ****
+- O objeto Number, pai dos números, contém métodos muito úteis para trabalhar com números em JS;
+- A maioria dos tipos de dados também tem um objeto pai, como: String, Object e Array;
+
+**** Métodos de String ****
+- O objeto String também possui métodos muito úteis;
+- Esses métodos vão auxiliar a manusear textos
+
+**** TUDO É OBJETO ****
+- Como deu pra perceber, muito tipos de dados tem métodos e propriedades
+- Pode-se criar também objetos com propriedades e métodos para auxiliar nos programas
+
+**** A instrução THIS ****
+- Fora de escopos locais, o this sempre se refere ao objeto global Window;
+- Em objetos, o this vai se referir a instância e pode acessar suas propriedades;
+
+**** O QUE É DOM ****
+- Document Object Model ()
+- Uma interface de programação para HTML;
+- Por meio dele temos métodos para acessar a árvore de elementos;
+- O DOM fornece uma cópia do HTML
+- Podemos manipular eventos pelo DOM para afetar o HTML;
+
+**** Acessando o DOM ****
+- Acessar o DOM caracteriza-se por identificar um elemento do HTML através de métodos;
+- Depois, podemos manipulá-los da forma que quisermos;
+- Acessar o DOM é semelhante as regras de CSS;
+- Podemos acessar por: tags, ids e classes;
+- Para isso, dispomos de alguns métodos da classe pai document
+- Sendo eles: getElementById, getElementsByClassName, getElementsByTagName
+
+**** Outras formas de acessar elementos ****
+- Com a evolução da linguagem foram criados dois seletores que tornam tudo mais simples;
+- querySelector e querySelectorAll;
+- Com estes seletores podemos acessar os elementos baseados em regras de CSS;
+
+**** Alterando o Conteúdo ****
+- Podemos alterar o texto de qualquer elemento de forma fácil com JS;
+- Podemos fazer isso com textContent e innerHTML
+
+**** Criando elementos com DOM ****
+- Outra possibilidade do JS e o DOM é criar elementos;
+- O texto de um elemento é considerado um nó na árvore do DOM;
+- Ou seja, temos que criar o texto do elemento também;
+- Podemos fazer tudo isso com createElement('tag') e createTextNode('text')
+- Para inserir o texto dentro da tag: novoElementoCriado.appendChild('text');
+
+**** Removendo elementos com DOM ****
+- Remover elementos também é bem fácil
+- É possível remover o elemento diretamente e também um elemento filho;
+- Para isso, dispomos do métodos do método removeChild e remove
+- Para remover um elemento filho: elementoPai.removeChild(elementoQueVaiSerRemovido);
+- Para remover um elemento: elemento.remove();
+
+**** Adicionando elementos filho ****
+- Podemos inserir um elemento dentro de outro, por exemplo, um parágrafo em uma div;
+- Isso é considerado como "acrescentar um filho" em JS;
+- Existem dois métodos para fazer isso: appendChild e insertBefore;
+- Sintaxe: elementoPai.appendChild(novoElemento). O elemento é inserido no final do elemento pai;
+- Sintaxe: elementoPai.insertBefore(elemento1, elemento2). O elemento1 é inserido antes do elemento2;
+
+**** Adicionando CSS a um elemento ****
+- Podemos adicionar classes css aos elementos do DOM;
+- Para isso, dispomos do atributo classList;
+- Sintaxe: element.classList = 'novo-css';
+- Também podemos adicionar css inline nas tags por meio da sintaxe: elemento.style.color = 'red';
+- Além disso, podemos inserir vários CSSs inline por meio da sintaxe: elemento.style.cssText = 'color: red; css2; css3;'
+- CSS inline substitui o CSS externo!
+- Também podemos verificar se um elemento possui uma certa classe: elemento.classList.contains('classe_css');
+- Podemos remove ou adicionar um css também: elemento.classList.remove('hide') | elemento.classList.add('visible')
+
+**** Podemos trocar elementos no DOM ****
+- Podemos também trocar um elemento no DOM por outro;
+- Ou seja, substituir uma tag por outra de modo bem fácil;
+- Para isso, primeiro selecionamos o elemento que queremos trocar
+- Depois disso, selecionamos o pai do elemento que queremos trocar
+- Podemos selecionar o pai do elemento com: elementoQueQueroTroca.parentNode();
+- Agora é só criar o novo elemento e o seu texto com createElement, createTextNode e appendChild
+- Por fim, para fazer a troca: elementoPai.replaceChilde(elNovo, elTrocado);
+
+**** Adicionando Atributos com DOM ****
+- Podemos alterar os atributos de tags via JS e DOM;
+- Por exemplo: alterar o atributo src de uma imagem;
+- Todos os atributos podem ser alterados via JS!
+- Para isso, utilizamos o element.setAttribute('atributo', 'valorDoAtributo');
+- Exemplos: lista.setAttribute('id', 'novoID');
+- Para remover um atributo: lista.removeAttribute('id');
+
+**** Propriedades de Document ****
+- O objeto document não tem somente métodos;
+- Podemos retirar várias informações importantes das suas propriedades
+
+**** Callback functions ****
+- A função callback é um recurso muito interessante e também amplamente utilizando em JS;
+- Permite  executar uma função depois de uma determinada ação;
+- Conceito fundamental para entender a parte assíncrona do JS;
+
+**** setTimeout e setInterval ****
+- Podemos com estas funções criar ações no software que executam depois de um tempo ou de tempos em tempos;
+- Um dos argumentos destas funções é uma callback function;
+- setTimeout(function(){
+    console.log('setTimeout: assíncrono, callback e execução após X de tempo')
+}, 3000) 
+- setInterval(function(){
+    console.log('setInterval: assíncrona, callback e executa a cada X de tempo')
+}, 3000) 
+- Podemos por um fim no setTimeout e no setInterval por meio de dois métodos
+- Então, após determinada condição, os timers não serão mais executados
+
+**** Eventos ****
+- Por meio do JS podemos mapear algumas ações dos usuários, que chamamos de eventos;
+- Como: movimento do mouse, click, mouse entrando ou saindo de um elemento, carramento da página etc;
+- E então criar comportamentos interessantes, tais como animações.
+- O evento onload é ativado ao carregar a página
+- O evento click é ativado quando o usuário clica em um documento em que atrelamos o evento
+- elemento.addEventListener('click', function(){
+    // this faz referência ao elemento
+    this.style.color = 'red';
+});
+- Existem outros eventos como: mouseover, mouseout, keydown e keyup, por exemplo.
+- Segue um exemplo com keydown e key up:
+    el.addEventListener('keydown', function(event){
+        if(event.key === 'Enter'){
+            el.style.backgroundColor = 'yellow';
+        }
+    });
+
+    el.addEventListener('keyup', function(event){
+        el.style.backgroundColor = 'white';
+    });
+
+**** JSON ****
+- JSON = JavaScript Object Notation;
+- Um formato de representação de dados;
+- Mais simples que XML, que é utilizado para fins parecidos;
+- Utiliza o formato chave e valor;
+- É leve para ser enviado por requisições;
+- Muito utilizado para API e também para arquivos de configuração;
+- O JSON aceita diversos tipos de dados: strings, números, arrays, objetos e null
+- Um objeto JS pode ser convertido para um JSON string por meio do comando JSON.stringify (obj)
+- Para transformar um JSON string em um objeto JS: JSON.parse(jsonData);
+- Posso mapear um array de objetos JS com o método map: objData.map((pessoa) => { console.log(pessoa.nome); })
+
+**** AJAX ****
+- Significa Asynchronous JavaScript and XML;
+- É uma técnica que permite fazer requisições HTTP em segundo plano, ou seja, sem recarregar a página;
+- Ganhou o objeto XmlHttpRequest que padronizou os browsers;
+- É geralmente utilizado para fazer requisições de API hoje em dia
+- Exemplo de uso:
+    var xhr = new XMLHttpRequest();
+    console.log(xhr);
+
+    hr.responseType = 'text'; // Formato da resposta: json, document, text, html etc. Por default == text
+    // Ao detectar uma mudança no estado do objeto chama uma função
+    xhr.onreadystatechange = function(){
+        // readyState representa o estado atual da requisição:
+        Valor	Estado	            Descrição
+        0	    UNSENT	            Um cliente foi criado. Mas o método open()  não foi chamado ainda.
+        1	    OPENED	            O método open() foi chamado.
+        2	    HEADERS_RECEIVED	o método send() foi chamado e os cabeçalhos e status estão disponíveis .
+        3	    LOADING	            Baixando e responseText contem os dados parciais.
+        4	    DONE	            Operação concluída.
+        
+        status 200 === OK!
+        if(xhr.readyState == 4 && xhr.status == 200){
+
+        }
+    }
+
+    // Verbo HTTP e URL
+    xhr.open('GET', URL);
+
+    // Executa o verbo HTTP (GET, POST, PATCH, DELETE etc)
+    xhr.send();
+
+**** Promises ****
+- Promises são como promessas na vida real, ela está esperando algum retorno;
+- Um objeto Promise guarda a promessa de que a função que gerou ele irá em algum
+  momento no futuro terminar e retornar uma resposta.
+- Para criar uma promessa instanciamos a classe Promise;
+- Que leva dois argumentos: resolve (solução) e reject (erro);
+- Para encadear mais processos utilizamos o método then;
+- Alguns recursos de JS (Fetch API) e bibliotecas retornam Promises;
+- Promises são assíncronas
+- O fetch () permite que você faça solicitações de rede semelhantes a XMLHttpRequest (XHR). 
+A principal diferença é que a API Fetch usa o Promises, que permite uma API mais simples e mais limpa.
+
+**** Async e Await ****
+- As funções assíncronas funcionam como Promises, porém, com uma sintaxe mais simples;
+- Precisamos declarar a função com a palavra async;
+- E quando precisamos aguardar por algo, a instrução precisa de await;
+- Podemos aplicar o recurso em funções anônimas e métodos de classe;
+- Tentar usar o await sem o async gera um erro;
+- Exemplo de uso: inserção de dado no banco;

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica';
+    background-image: linear-gradient(to right, #E65763, #34073D);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#tasks-container{
+    width: 500px;
+    max-width: 90vw;
+    margin: auto;
+}
+
+/*tasks form*/
+
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    border: 1px solid #34073d;
+    background: #fff;
+    color: #34073d;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+
+#add-task-form input::placeholder{
+    color: #34073d;
+}
+
+#add-btn{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #34073d;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+    padding-top: 5px;
+}
+
+#add-btn:hover{
+    background: #34073d;
+    color: white;
+    border-color: white;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #34073d;
+    background: white;
+    color: #34073d;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+#task-list li .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: .5s;
+    cursor: pointer;
+    width: 40px;
+    padding: 5px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    background: #09e01b;
+    color: white;
+}
+
+.remove-btn{
+    right: 0px;
+}
+
+.remove-btn:hover{
+    color: white;
+    background: #eb0927;
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: #34073D;
+    color: white;
+    text-decoration: line-through;
+}
